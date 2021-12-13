@@ -1,0 +1,544 @@
+/* -------------- Stucture CV -------------- */
+
+body {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    box-sizing: border-box;
+    font-family: "Courier", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+/* ------------ PC ------------ */
+@media screen and (min-width: 1201px) {
+
+    .h1-about {
+        text-align: center;
+    }
+
+    .aside1 h1 {
+        max-width: 10px;
+    }
+
+    .box {
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+        padding: 100px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+
+    .box-about {
+        height: 100vh;
+        padding: 100px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+}
+
+/* ------------ PC - end------------ */
+/* -------------- Structure CV - end -------------- */
+
+
+/* ------------ logo home----------- */
+.logo-contact-size {
+    width: 30px;
+    clip-path: ellipse(70% 50%);
+}
+
+.logo-contact {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.logo-marge {
+    margin: 4%;
+}
+
+.padding-10 {
+    padding: 10%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+a {
+    margin: auto;
+}
+
+.img-home {
+    width: 200px;
+    clip-path: ellipse(50% 35%);
+}
+
+/* ------------ logo home---------- */
+
+
+/* ------------- Footer ----------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-background {
+    background-color: r(0, 0, 0, 0.05);
+}
+
+/* ------------ Footer - end ------------ */
+
+
+/* ------------ NavBar ------------ */
+navbar {
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 18px 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 755px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* ------------ NavBar - end ------------ */
+
+
+/* ------- About me differente size (pc, tablette, telephone ------- */
+.section1 {
+    float: left;
+    display: inline;
+    margin: 0 1.5%;
+    width: 50%;
+    flex-direction: row;
+    padding: 1%;
+    background-color: teal;
+    border-radius: 10px;
+}
+
+.aside1 {
+    float: right;
+    display: inline;
+    margin: 0 1.5%;
+    width: 20%;
+    padding: 1%;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+.aside_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.phmargin {
+    margin: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+    .aside_box {
+        flex-direction: column;
+    }
+
+    .section1 {
+        height: auto;
+        margin-bottom: 5px;
+        width: 49%;
+    }
+
+    .aside1 {
+        height: auto;
+        margin-bottom: 5px;
+        flex-direction: initial;
+        background-color: tomato;
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .phmargin {
+        text-align: center;
+    }
+
+    .box {
+        height: 100vh;
+        padding: 100px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+
+    .box-about {
+        height: auto;
+        padding: 100px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    h1 {
+        font-size: 200%;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    .btn-primary-cv {
+        font-size: 90%;
+    }
+
+    .box {
+        height: 100vh;
+        padding: 50px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+
+    .box-about {
+        height: auto;
+        padding: 10px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+}
+
+/* ------- About me differente size (pc, tablette, telephone - end ------- */
+
+
+
+/* -------------- Download CV------------- */
+.btn-primary-cv {
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to bottom, #ef473a, #cb2d3e);
+    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    border-color: #cb2d3e !important;
+}
+
+.btn-primary-cv:hover,
+.btn-primary-cv:active,
+.btn-primary-cv:focus {
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to top, #ef473a, #cb2d3e);
+    background: linear-gradient(to top, #ef473a, #cb2d3e);
+    border-color: #cb2d3e !important;
+}
+
+/* -------------- Download CV - end ------------- */
+
+
+/* ------- Contact formulaire differente size (pc, tablette, telephone - end ------- */
+@media screen and (min-width: 1201px) {
+
+    .box-contact {
+        height: 100vh;
+        padding: 100px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+
+    .section2 {
+        float: left;
+        display: inline;
+        margin: 0 1.5%;
+        width: 50%;
+        flex-direction: row;
+        padding: 1%;
+        border-radius: 10px;
+    }
+
+    .aside2 {
+        float: right;
+        display: inline;
+        margin: 0 1.5%;
+        width: 40%;
+        padding: 1%;
+
+        background-color: tomato;
+        border-radius: 10px;
+    }
+
+    .aside_box2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .box-contact {
+        height: 100vh;
+        padding: 100px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+
+    .section2 {
+        float: left;
+        display: inline;
+        margin: 0 1.5%;
+        width: 50%;
+        flex-direction: row;
+        padding: 1%;
+        border-radius: 10px;
+    }
+
+    .aside2 {
+        float: right;
+        display: inline;
+        margin: 0 1.5%;
+        width: 40%;
+        padding: 1%;
+        background-color: tomato;
+        border-radius: 10px;
+    }
+
+    .aside_box2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .box-contact {
+        height: auto;
+        padding: 100px;
+        margin-bottom: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: #ECE9E6;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+        background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    }
+
+    .aside_box2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section2 {
+        height: auto;
+        margin-bottom: 5px;
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .aside2 {
+        height: auto;
+        margin-bottom: 5px;
+        flex-direction: initial;
+        background-color: tomato;
+        width: 60%;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+
+/* ------- Contact formulaire differente size (pc, tablette, telephone - end ------- */
+
+
+/* -------------- Card experience --------- */
+.card-body {
+    background: -webkit-linear-gradient(to right, #859398, #283048);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: wheat;
+}
+
+.box-experience {
+    height: auto;
+    padding: 100px;
+    margin-bottom: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+}
+
+.aside_box3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.card {
+    width: 25vh;
+    margin: 20px;
+    padding: 10px;
+    font-size: 90%;
+    height: auto;
+}
+
+.card-body {
+    font-family: Garamond, serif;
+}
+
+/* -------------- Card experience - end --------- */
+
+
+/* -------------- progresse bar size --------- */
+.size-bar-progresse-10 {
+    width: 10%;
+}
+
+.size-bar-progresse-25 {
+    width: 25%;
+}
+
+.size-bar-progresse-30 {
+    width: 30%;
+}
+
+.size-bar-progresse-40 {
+    width: 40%;
+}
+
+.size-bar-progresse-50 {
+    width: 50%;
+}
+
+.size-bar-progresse-60 {
+    width: 60%;
+}
+
+.size-bar-progresse-70 {
+    width: 70%;
+}
+
+.size-bar-progresse-80 {
+    width: 80%;
+}
+
+.size-bar-progresse-90 {
+    width: 90%;
+}
+
+.size-bar-progresse-100 {
+    width: 100%;
+}
+
+/* -------------- progresse bar size - end --------- */
